@@ -1,0 +1,19 @@
+{% extends 'base.html'%} {% block content1 %}
+<h1><a href="/">경희대학교 버스 도착 시간</a></h1>
+<h1>현재시각: {{nowtime}}</h1>
+<hr size="8px" color="black" />
+<div>
+  <ul class="menu">
+    <li class="park">
+      <a href="/busstop/sa/">사색의 광장</a>
+    </li>
+    <li class="bio">
+      <a href="/busstop/bio/">생명과학대</a>
+    </li>
+    <li class="pe">
+      <a href="/busstop/pe/">체육대학.외대</a>
+    </li>
+  </ul>
+</div>
+<p class="des">{{info_message}}</p>
+{% block content2%} {% endblock %} {% endblock %}
